@@ -31,8 +31,6 @@ jobs:
           Version: 12
       - name: GitHub Action for NPM/Chrome
         uses: daleobrien/npm-with-chrome-browser-action@v1.0.1
-        with:
-          cmd: npm install
           
       - name: creating build
         run: npm run-script build

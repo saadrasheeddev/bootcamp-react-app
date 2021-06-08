@@ -29,8 +29,11 @@ jobs:
         uses: actions/setup-node@v2.1.5
         with:
           Version: 12
-      - name: GitHub Action for NPM/Chrome
-        uses: daleobrien/npm-with-chrome-browser-action@v1.0.1
+          
+      - name: GitHub Action for Yarn
+        uses: Borales/actions-yarn@v2.3.0
+        with:
+          cmd: install
           
       - name: creating build
         run: npm run-script build

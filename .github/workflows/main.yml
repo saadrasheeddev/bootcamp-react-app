@@ -39,7 +39,7 @@ jobs:
         run: sudo yarn build
           
       - name: installing surge
-        run: yarn install -g surge
+        run: npm install -g surge
         
       - name: deploy on surge
         run: surge ./build https://panacloud_bootcamp2020_class_2.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
